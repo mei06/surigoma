@@ -11,7 +11,7 @@ body {
     margin:0;
 }
 
-body , h3 , h2 {
+body , h3 , h2 , h4 {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -517,15 +517,83 @@ h2 {
 }
 
 .recipe-wrapper {
-    width:1210px;
+    width:1200px;
     height:950px;
     margin:0 auto;
 }
 
 .recipe {
-    width:1160px;
-    height:805px;
     background-color:white;
+    padding:70px 60px;
+    display:flex;
+    flex-flow:column;
+}
+
+.recipe-head {
+    display:flex;
+    vertical-align:baseline;
+    margin-bottom:40px;
+}
+
+.cutlery {
+    width:40px;
+    margin-right:20px;
+    align-self: flex-start;
+}
+
+.recipe-main {
+    display:flex;
+    justify-content: space-between;
+}
+
+.recipe-h3 {
+    font-size:25px;
+}
+
+.recipe-img {
+    width:520px;
+    align-self: flex-start;
+}
+
+h4 {
+    font-size:22px;
+    color:rgb(24, 226, 226);
+    font-weight:900;
+    text-align:center;
+}
+
+.A {
+    font-size:16px;
+    font-weight:900;
+    color:rgb(24, 226, 226);
+}
+
+.recipe-content {
+    font-size:15px;
+    border-bottom: dotted 2px rgb(24, 226, 226);
+    width:485px;
+}
+
+.recipe-right {
+    text-align:right;
+}
+
+.recipe-b {
+    padding:0 0 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-c {
+    padding-bottom:25px;
+}
+
+.recipe-mark {
+    font-size:20px;
+    font-weight:600;
+    color:rgb(24, 226, 226);
+    padding-right:20px;
+    vertical-align:middle;
 }
 
 
@@ -653,4 +721,8 @@ footer {
 .br::before {
 	content: "\A" ;
 	white-space: pre ;
+}
+
+
+@media screen and (max-width: 768px) {
 }

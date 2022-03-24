@@ -8,6 +8,8 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
 
   <body>
@@ -168,7 +170,7 @@
     </div>
 
     <a name="check"></a>
-    <div class="check-wrapper2">
+    <div class="check-wrapper">
       <div class="container">
         <div class="point-heading">
           <h2>おすすめレシピ</h2>
@@ -177,45 +179,43 @@
         <div class="main check-main">
           <div class="check">
             <ul class="check-list">
-            <a class="check-a" href="https://hattendo.jp/product/amaou/?utm_source=criteo&utm_medium=cpc">
-              <li class="check-hou check-one">
+              <li class="check-buttom check-hou check-one" id="recipe_buttom_1">
                 <p class="check-p check-ren">ほうれん草の和えもの</p>
                 <span class="fa fa-chevron-down check-fa"></span>
               </li>
-            </a>
-              <li class="check-one">
+              <li class="check-buttom check-one" id="recipe_buttom_2">
                 <p class="check-ptwe">レンコンとベーコンの<br>洋風きんぴら</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-one">
+              <li class="check-buttom check-one" id="recipe_buttom_3">
                 <p class="check-ptwe">鶏肉のクラッシュアーモンド<br>すりごま焼き</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-one">
+              <li class="check-buttom check-one">
                 <p class="check-ptwe">スモークサーモンの<br>ポテトサラダ</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-one">
+              <li class="check-buttom check-one">
                 <p class="check-ptwe">まぐろとアボカドの<br>ポキプレート</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-hou check-lis">
+              <li class="check-buttom check-hou check-lis">
                 <p class="check-p check-nis">ニース風サラダ</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-lis">
+              <li class="check-buttom check-lis">
                 <p class="check-p check-nis">はちみつバタートースト</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-lis">
+              <li class="check-buttom check-lis">
                 <p class="check-p check-nis">りんごのパウンドケーキ</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-lis">
+              <li class="check-buttom check-lis">
                 <p class="check-p check-nis">いちごのヨーグルト</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-lis">
+              <li class="check-buttom check-lis">
                 <p class="check-p check-nis">3種類のディアマンクッキー</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
@@ -223,8 +223,100 @@
           </div>
         </div>
         <div class="recipe-wrapper">
-            <div class="recipe">
+            <div class="recipe" id="recipe_1">
+              <div class="recipe-head">
+                <img class="cutlery" src=" <%= "/top_images/recipe_icon01.jpg" %>">
+                <h3 class="recipe-h3">ほうれん草の和えもの</h3>
+              </div>
+              <div class="recipe-main">
+                <img class="recipe-img" src=" <%="/top_images/recipe01_img01.jpg" %>">
+                <div class="recipe-contents">
+                  <h4>材料（2人分）</h4>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">ほうれん草</span>
+                    <span class="recipe-right">1束</span>
+                  </p>
+                  <p class="A">A</p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">クラッシュアーモンドすりごま</span>
+                    <span class="recipe-right">大さじ2</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">しょう油・砂糖各</span>
+                    <span class="recipe-right">大さじ1/2</span>
+                  </p>
+                  <h4>作り方</h4>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">①</span>ほうれん草はさっとゆでて水気を絞り、3cm幅に切る。
+                  </p>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">②</span>ボウルで①・Aを和える。
+                  </p>
             </div>
+
+            <div class="recipe" style="display:none;" id="recipe_2">
+              <div class="recipe-head">
+                <img class="cutlery" src=" <%= "/top_images/recipe_icon01.jpg" %>">
+                <h3 class="recipe-h3">レンコンとベーコンの洋風きんぴら</h3>
+              </div>
+              <div class="recipe-main">
+                <img class="recipe-img" src=" <%="/top_images/recipe01_img02.jpg" %>">
+                <div class="recipe-contents">
+                  <h4>材料（2人分）</h4>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">レンコン</span>
+                    <span class="recipe-right">レンコン150g</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">ベーコン</span>
+                    <span class="recipe-right">40g</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">オリーブ油</span>
+                    <span class="recipe-right">大さじ1</span>
+                  </p>
+                  <p class="A">A</p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">ニンニク（みじん切り）</span>
+                    <span class="recipe-right">1/2片分</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">鷹の爪（輪切り）</span>
+                    <span class="recipe-right">小さじ1/4</span>
+                  </p>
+                  <p class="A">B</p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">コンソメスープの素（顆粒）</span>
+                    <span class="recipe-right">小さじ1/2</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">塩・コショウ</span>
+                    <span class="recipe-right">各適量</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">クラッシュアーモンドすりごま</span>
+                    <span class="recipe-right">大さじ2</span>
+                  </p>
+                  <h4>作り方</h4>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">①</span>レンコンはスライスして、酢水（分量外）にさらす。ベーコンは1cm幅に切る。
+                  </p>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">②</span>フライパンにオリーブ油とAを入れ、弱火で炒め、ニンニクの香りが出たらベーコンを入れ、カリカリになるまで炒める。
+                  </p>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">③</span>レンコンを加えて炒め、しんなりとしたらBを入れ混ぜ合わせる。
+                  </p>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">④</span>クラッシュアーモンドすりごまを入れ、全体をなじませる。
+                  </p>
+            </div>
+            
+            <div class="recipe" style="display:none;" id="recipe_3">
+              鶏肉
+            </div>
+        </div>
+        </div>
         </div>
       </div>
     </div>
@@ -277,5 +369,12 @@
     </footer>
 
     <%= yield %>
+    <script>
+      $('.check-buttom').click(function() {
+        $(".recipe").hide();
+        $("#recipe_" + $(this).attr("id").slice(-1)).show();
+        console.log($(this).attr("id"));
+    })
+    </script>
   </body>
 </html>
