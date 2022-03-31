@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
   </head>
 
   <body>
@@ -19,8 +20,11 @@
           <img class="logo" src="<%= "/top_images/logo.png" %>">
           <img class="img01" src="<%= "/top_images/visual_img01.png" %>">
           <img class="img03" src="<%= "/top_images/visual_img03.png" %>">
+          <img class="pad01" src="<%= "/top_images/pad_img01.png" %>">
           <img class="img04" src="<%= "/top_images/visual_img04.png" %>">
+          <img class="pad02" src="<%= "/top_images/pad_img02.png" %>">
           <img class="img05" src="<%= "/top_images/visual_img05.png" %>">
+          <img class="pad03" src="<%= "/top_images/pad_img03.png" %>">
         </div>
       </div>
     </div>
@@ -29,32 +33,32 @@
       <div class="container">
         <div class="center">
           <ul class="center-list">
-            <a class="center-head" href="https://www.shinsei-ip.ne.jp/">
-              <li>
+            <li>
+              <a href="https://www.shinsei-ip.ne.jp/">
                 <img class="li-logo" src="<%= "/top_images/logo.png" %>">
-              </li>
-            </a>
-            <a class="center-head point-check anchor" href="#point">
-              <li>
+              </a>
+            </li>
+            <li class="center-head">
+              <a class="point-check anchor" href="#point">
                 商品の特徴
-              </li>
-            </a>
-            <a class="center-head point-check anchor" href="#check">
-              <li>
+                </a>
+            </li>
+            <li class="center-head">
+              <a class="point-check anchor" href="#check">
                 おすすめレシピ
-              </li>
-            </a>
-            <a class="center-head point-check anchor" href="#introduction">
-              <li>
+              </a>
+            </li>
+            <li class="center-head">
+              <a class="point-check anchor" href="#introduction">
                 商品のご紹介
-              </li>
-            </a>
-            <a class="center-online" href="https://www.goma-shop.com/?_ga=2.75066064.356756062.1647926009-1300478666.1647265540">
-              <li class="online-shop">
+              </a>
+            </li>
+            <li class="center-online">
+              <a class="online-online" href="https://www.goma-shop.com/?_ga=2.75066064.356756062.1647926009-1300478666.1647265540">
                 <span class="fa fa-shopping-cart fa-center fa-lg"></span>
                   オンラインショップ
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -65,10 +69,10 @@
         <div class="heading">
           <img class="heading-logo" src=" <%="/top_images/visual_img02.png" %>">
         </div>
-        <div class="main">
+        <div class="main thirteen-main">
           <img class="package" src=" <%="/top_images/fourmula_img01.png" %>">
             <div class="thirteen-contents">
-              <h3>クラッシュアーモンドすりごま</h3>
+              <h3 class="thirteen-h3">クラッシュアーモンドすりごま</h3>
               <p class="thirteen-p">すりごまに注目食材No.1のアーモンドをプラス！<br>さらに美味しく、美容にもぴったり！</p>
               <div class="thrteen-img">
                 <img class="component" src=" <%= "/top_images/fourmula_img02.png" %>">
@@ -101,8 +105,10 @@
             </div>
           <p class="annotation">出典:「日本市場におけるナッツに関する消費者調査」 カリフォルニア・アーモンド協会 2018年7月～8月、対象:男女2,000人</p>
         </div>
-        <img class="sub noone-sweet" src=" <%= "/top_images/contrast_img04.png" %>">
-        <img class="subs noone-sweets" src=" <%= "/top_images/contrast_img05.jpg" %>">
+        <div class="sweet-content">
+          <img class="sub noone-sweet" src=" <%= "/top_images/contrast_img04.png" %>">
+          <img class="subs noone-sweets" src=" <%= "/top_images/contrast_img05.jpg" %>">
+        </div>
       </div>
     </div>
 
@@ -113,15 +119,15 @@
           <h2>クラッシュアーモンド すりごまの特徴</h2>
           <img class="under-point" src=" <%= "/top_images/h2_ttl01.png" %>">
         </div>
-        <div class="main point-main">
+        <div class="point-main">
           <img class="point-img p-img-one" src=" <%= "/top_images/point_img01.png" %>">
             <div class="point-contents p-contents-one">
               <img class="number-img" src=" <%= "/top_images/point_ttl01.png" %>">
               <div class="point-content">
-                <h3 class="point-h13">ごまとアーモンドの2つの栄養を<br>ひとふりで摂取！</h3>
+                <h3 class="point-h13">ごまとアーモンドの2つの栄養をひとふりで摂取！</h3>
                 <h3 class="point-h3">抗酸化作用の相乗効果で栄養価アップ！<h3>
                 <p>
-                  アーモンドにはビタミンEが非常に多く含まれており、ごまに含まれ<br>るゴマグリナンと同時に摂取すると、ゴマグリナンのはたらきによ<br>ってビタミンE活性を増強するという研究報告があります。
+                  アーモンドにはビタミンEが非常に多く含まれており、ごまに含まれるゴマグリナンと同時に摂取すると、ゴマグリナンのはたらきによってビタミンE活性を増強するという研究報告があります。
                 </p>
                 <p class="annotation point-annotation">出典：福田 靖子「科学でひらく ゴマの世界」</p>
                 <img class="point-w" src=" <%= "/top_images/point_img02.png" %>">
@@ -131,7 +137,7 @@
         <div class="point-area">
           <div class="area area-left">
             <img src=" <%= "/top_images/point_img03.jpg" %>">
-            <h3 class="point-h3 area-h3">アーモンド30％配合</h3>
+            <h3 class="point-h3 area-h3">アーモンド<span class="point-span">30</span>％配合</h3>
             <p>アメリカの広大な敷地で育まれた最高品質のカリフォルニアアーモンドを使用しています。</p>
           </div>
           <div class="area area-right">
@@ -140,21 +146,22 @@
             <p>アーモンドがプラスされたことで、ビタミンEもパワーアップ！アーモンドは美容や健康に良い食材として認知されているようです。</p>
           </div>
         </div>
-        <div class="main point-main">
+        <div class="main point-main point-main-twe">
           <img class="point-img p-img-twe" src=" <%= "/top_images/point_img05.png" %>">
-            <div class="point-contents  p-contents-twe">
+            <div class="point-contents p-contents-twe">
               <img class="number-img-twe" src=" <%= "/top_images/point_ttl02.png" %>">
               <div class="point-content p-content-twe">
-                <h3 class="point-h13">ごまとアーモンドのW食感で、<br>様々なメニューを美味しく！</h3>
+                <div class="clear"></div>
+                <h3 class="point-h13">ごまとアーモンドのW食感で、様々なメニューを美味しく！</h3>
                 <h3 class="point-h3">料理のアクセントに香ばし食感<h3>
                 <p>
-                  アーモンドの食感がアクセントとなり、くせになります。<br>味つけしていないのでごまと同じ使い方ができ、様々な料理にト<br>ッピングしていただけます。
+                  アーモンドの食感がアクセントとなり、くせになります。<br>味つけしていないのでごまと同じ使い方ができ、様々な料理にトッピングしていただけます。
                 </p>
                 <img class="point-ww" src=" <%= "/top_images/point_img06.png" %>">
               </div>
             </div>
         </div>
-        <div class="point-area">
+        <div class="point-areas">
             <img class="areas-left" src=" <%= "/top_images/point_img07.png" %>">
           <div class="areas areas-right">
             <img src=" <%= "/top_images/point_img08.png" %>">
@@ -162,9 +169,11 @@
             <p>クラッシュアーモンドのざくざくした食感が加わることでいつもの惣菜もランクアップ！</p>
           </div>
         </div>
-        <div class="point-sub">
-          <img class="sub point-sweet" src=" <%= "/top_images/point_ttl03.png" %>">
-          <img class="subs point-sweets" src=" <%= "/top_images/point_img09.jpg" %>">
+        <div class="point-content">
+          <div class="point-sub">
+            <img class="sub point-sweet" src=" <%= "/top_images/point_ttl03.png" %>">
+            <img class="subs point-sweets" src=" <%= "/top_images/point_img09.jpg" %>">
+          </div>
         </div>
       </div>
     </div>
@@ -215,7 +224,7 @@
                 <p class="check-p check-nis">いちごのヨーグルト</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
-              <li class="check-buttom check-lis" id="recipe_buttom_10">
+              <li class="check-buttom check-lis" id="recipe_buttom_0">
                 <p class="check-p check-nis">3種類のディアマンクッキー</p>
                 <span class="fa fa-chevron-down"></span>
               </li>
@@ -301,7 +310,7 @@
                     <span class="recipe-left">クラッシュアーモンドすりごま</span>
                     <span class="recipe-right">大さじ2</span>
                   </p>
-                  <h4>作り方</h4>
+                  <h4 class="recipe-h4">作り方</h4>
                   <p class="recipe-content recipe-c">
                     <span class="recipe-mark">①</span>
                     レンコンはスライスして、酢水（分量外）にさらす。ベーコ<br>ンは1cm幅に切る。
@@ -355,7 +364,7 @@
                     <span class="recipe-left">クレソン・ミニトマト・レモン</span>
                     <span class="recipe-right">適宜</span>
                   </p>
-                  <h4 class="recipe-h4">作り方</h4>
+                  <h4 class="recipe-h4-another">作り方</h4>
                   <p class="recipe-content recipe-c">
                     <span class="recipe-mark">①</span>
                       鶏もも肉はひと口大に切り、塩・コショウをして薄力粉をま<br>ぶし、溶き卵にくぐらせてクラッシュアーモンドすりごまを<br>まぶす。
@@ -506,7 +515,7 @@
                 <h3 class="recipe-h3">ニース風サラダ</h3>
               </div>
               <div class="recipe-main">
-                <img class="recipe-img" src=" <%="/top_images/recipe01_img02.jpg" %>">
+                <img class="recipe-img" src=" <%="/top_images/recipe01_img06.jpg" %>">
                 <div class="recipe-contents">
                   <h4>材料（2人分）</h4>
                   <p class="recipe-content recipe-b">
@@ -554,7 +563,7 @@
                     <span class="recipe-left">塩</span>
                     <span class="recipe-right">適量</span>
                   </p>
-                  <h4>作り方</h4>
+                  <h4 class="recipe-h4">作り方</h4>
                   <p class="recipe-content recipe-c">
                     <span class="recipe-mark">①</span>
                     スナップエンドウは筋を取りさっと茹でてさやを開く。
@@ -571,7 +580,7 @@
               </div>
             </div>
 
-            <div class="recipe" id="recipe_7">
+            <div class="recipe" style="display:none;" id="recipe_7">
               <div class="recipe-head">
                 <img class="cutlery" src=" <%= "/top_images/recipe_icon01.jpg" %>">
                 <h3 class="recipe-h3">はちみつバタートースト</h3>
@@ -596,7 +605,7 @@
                     <span class="recipe-left">はちみつ</span>
                     <span class="recipe-right">大さじ2</span>
                   </p>
-                  <h4 class="recipe-h4">作り方</h4>
+                  <h4 class="recipe-h4-another">作り方</h4>
                   <p class="recipe-content recipe-c">
                     <span class="recipe-mark">①</span>
                       食パンは十字に切り込みを入れ、トースターでこんがりと焼<br>く。
@@ -655,7 +664,7 @@
                     <span class="recipe-left">レモン汁</span>
                     <span class="recipe-right">小さじ1</span>
                   </p>
-                  <h4>作り方</h4>
+                  <h4 class="recipe-h4">作り方</h4>
                   <p class="recipe-content recipe-c">
                     <span class="recipe-mark">①</span>
                     鍋にAを入れ、りんごが柔らかくなるまで弱火で煮て、あら<br>熱をとる。
@@ -676,6 +685,106 @@
               </div>
             </div>
 
+            <div class="recipe" style="display:none;" id="recipe_9">
+              <div class="recipe-head">
+                <img class="cutlery" src=" <%= "/top_images/recipe_icon01.jpg" %>">
+                <h3 class="recipe-h3">いちごのヨーグルト</h3>
+              </div>
+              <div class="recipe-main">
+                <img class="recipe-img" src=" <%="/top_images/recipe01_img09.jpg" %>">
+                <div class="recipe-contents">
+                  <h4>材料（2人分）</h4>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">ヨーグルト</span>
+                    <span class="recipe-right">200g</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">クラッシュアーモンドすりごま</span>
+                    <span class="recipe-right">大さじ2</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">いちご・ブルーベリー</span>
+                    <span class="recipe-right">適量</span>
+                  </p>
+                  <h4 class="recipe-h4-another">作り方</h4>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">①</span>
+                      器にヨーグルトを盛り、カットしたフルーツを乗せてクラッ<br>シュアーモンドすりごまをかける。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recipe" style="display:none;" id="recipe_0">
+              <div class="recipe-head">
+                <img class="cutlery" src=" <%= "/top_images/recipe_icon01.jpg" %>">
+                <h3 class="recipe-h3">3種類のディアマンクッキー</h3>
+              </div>
+              <div class="recipe-main">
+                <img class="recipe-img" src=" <%="/top_images/recipe01_img10.jpg" %>">
+                <div class="recipe-contents">
+                  <h4>材料（20枚分）</h4>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">無塩バター</span>
+                    <span class="recipe-right">60g</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">粉砂糖</span>
+                    <span class="recipe-right">40g</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">卵（卵黄と卵白をわける）</span>
+                    <span class="recipe-right">1個分</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">薄力粉</span>
+                    <span class="recipe-right">90g</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">アーモンドプードル</span>
+                    <span class="recipe-right">20g</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">クラッシュアーモンドすりごま</span>
+                    <span class="recipe-right">大さじ3</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">グラニュー糖</span>
+                    <span class="recipe-right">適量</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">抹茶</span>
+                    <span class="recipe-right">小さじ2</span>
+                  </p>
+                  <p class="recipe-content recipe-b">
+                    <span class="recipe-left">ココア</span>
+                    <span class="recipe-right">小さじ3</span>
+                  </p>
+                  <h4 class="recipe-h4-another">作り方</h4>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">①</span>
+                    室温に戻したバターをなめらかになるまで練りまぜ、粉砂糖<br>を加えて更に練り混ぜる。
+                  </p>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">②</span>
+                      卵黄を加えて混ぜ、薄力粉とアーモンドプードルを一緒にふ<br>るい、ゴムベラでさっくりと混ぜ合わせる。生地を3等分に<br>して、抹茶とココアをそれぞれ混ぜ合わせ、クラッシュアー<br>モンドすりごまも各大さじ1ずつ混ぜ合わせる。
+                  </p>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">③</span>
+                    直径2～3cmほどの棒状にし、ラップに包み冷蔵庫で2時間ほ<br>ど冷やし固める。
+                  </p>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">④</span>
+                    固まったら卵白を表面全体に塗って、グラニュー糖をまぶ<br>す。
+                  </p>
+                  <p class="recipe-content recipe-c">
+                    <span class="recipe-mark">⑤</span>
+                    厚さ1cmほどに切り、オーブンシートに並べて170度に温めた<br>オーブンで18～20分焼く。
+                  </p>
+                </div>
+              </div>
+            </div>
+
         </div>
       </div>
     </div>
@@ -689,11 +798,11 @@
         </div>
         <div class="main introduction-main">
           <img class="package introduction-package" src=" <%="/top_images/fourmula_img01.png" %>">
-          <div class="thirteen-contents">
-              <h3>クラッシュアーモンドすりごま</h3>
+          <div class="introduction-contents">
+              <h3 class="thirteen-h3">クラッシュアーモンドすりごま</h3>
               <p class="gram">内容量 50g　216円(税込)</p>
-              <p class="thirteen-p">
-              すりごまにクラッシュアーモンドを30％配合。ひとふりで簡単に<br>ごまとアーモンドの栄養が摂れます。定番のごま和えから、朝<br>食、スイーツのトッピングなど幅広くご利用いただけます。
+              <p class="thirteen-p introduction-p">
+              すりごまにクラッシュアーモンドを30％配合。ひとふりで簡単にごまとアーモンドの栄養が摂れます。定番のごま和えから、朝食、スイーツのトッピングなど幅広くご利用いただけます。
               </p>
               <p>ごまの香ばしさとアーモンドの食感がクセになるおいしさです。</p>
               <a class="thirteen-link" href="https://www.goma-shop.com/SHOP/5292_5.html?_ga=2.41394850.1046790497.1647265540-1300478666.1647265540">
@@ -732,7 +841,22 @@
       $('.check-buttom').click(function() {
         $(".recipe").hide();
         $("#recipe_" + $(this).attr("id").slice(-1)).show();
+        $('.check-list li').css('background-color','white');
+        $(this).css('background-color','rgb(36, 214, 214)');
+        $('.check-list li').css('color','rgb(36, 214, 214)');
+        $(this).css('color','white');
     })
+
+      $(".check-list li").hover(
+        function() {
+          $(this).css("background-color",'rgb(36, 214, 214)');
+          $(this).css("color",'white');
+      },
+        function() {
+          $(this).css("background-color",'white');
+          $(this).css("color",'rgb(36, 214, 214)');
+      })
+
     </script>
   </body>
 </html>
