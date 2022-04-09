@@ -881,6 +881,7 @@ footer {
     color:white;
     font-weight:900;
     font-size:18px;
+    right:30px;
 }
 
 .buy:hover {
@@ -1347,10 +1348,6 @@ footer {
         display:none;
     }
 
-    .right {
-        display:none;
-    }
-
 }
 
 
@@ -1724,7 +1721,7 @@ footer {
     }
 
     .check-list li:hover {
-        pointer-events: none;
+        //pointer-events: none;
     }
 
     .recipe {
@@ -1766,6 +1763,256 @@ footer {
 
     .recipe-right {
         font-size:12px;
+    }
+
+
+    //introduction-wrapper
+    
+    .main {
+        display:block;
+    }
+
+    .introduction-wrapper {
+        height:auto;
+    }
+
+    .introduction-main {
+        margin-top:20px;
+    }
+
+    .introduction-container {
+        padding:60px 0;
+    }
+
+    .introduction-package {
+        width:45%;
+        margin:0 28% 25px;
+    }
+
+    .gram {
+        font-size:17px;
+    }
+
+    .introduction-contents {
+        width:80%;
+        text-align:left;
+        margin:0 auto;
+    }
+
+    .introduction-p {
+        padding:0;
+    }
+
+    .introduction-contents h3 {
+        margin:0 -17px 0;
+    }
+
+    .introduction-wrapper .thirteen-link {
+        display:block !important;
+        width:100%;
+        padding:15px 0;
+        font-size:16px;
+    }
+
+    .thirteen-link .fa-shopping-cart {
+        top:34%;
+        left:3%;
+        font-size:20px;
+    }
+
+    .thirteen-link .fa-angle-right {
+        top:32%;
+        right:4%;
+        font-size:20px;
+    }
+
+
+    //footer 
+
+    footer {
+        height:120px;
+    }
+    
+    .footer-p {
+        font-size:14px;
+        font-weight:normal;
+        line-height:55px;
+    }
+
+    .page-top {
+        width:55px;
+        height:55px;
+        font-size:10px;
+        bottom:55px;
+        right:10px;
+    }
+
+    .fa-chevron-up {
+        margin:0;
+    }
+
+    .buy-bottom {
+        height:80px;
+        width:100%;
+        background-color:white;
+        position:fixed;
+        bottom:0;
+    }
+
+    .buy {
+        position:initial;
+        border-radius:40px;
+        width:70%;
+        height:40px;
+        line-height:40px;
+        margin:5% auto;
+        box-shadow:none;
+    }
+
+    .buy span {
+        margin:0;
+    }
+
+    .left-main {
+        width:100%;
+        margin-right:0;
+    }
+
+    .buy .br::before {
+        content: "\A" ;
+        white-space:normal;
+    }
+
+    .buy .fa-shopping-cart {
+        margin-right:20px;
+    }
+
+
+
+    .hamburger {
+        display : block;
+        position: fixed;
+        z-index : 3;
+        right : 13px;
+        top   : 12px;
+        width : 42px;
+        height: 42px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .hamburger span {
+        display : block;
+        position: absolute;
+        width   : 30px;
+        height  : 2px ;
+        left    : 6px;
+        background : #555;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition   : 0.3s ease-in-out;
+        transition        : 0.3s ease-in-out;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 10px;
+    }
+
+    .hamburger span:nth-child(2) {
+        top: 20px;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 30px;
+    }
+    
+      /* ナビ開いてる時のボタン */
+    .hamburger.active span:nth-child(1) {
+        top : 16px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform   : rotate(-45deg);
+        transform        : rotate(-45deg);
+    }
+    
+    .hamburger.active span:nth-child(2),
+    .hamburger.active span:nth-child(3) {
+        top: 16px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform   : rotate(45deg);
+        transform        : rotate(45deg);
+    }
+    
+    nav.globalMenuSp {
+        position: fixed;
+        z-index : 2;
+        top  : 0;
+        left : 0;
+        color: #000;
+        background: #00dbdb;
+        text-align: center;
+        transform: translateY(-100%);
+        transition: all 0.6s;
+        width: 100%;
+        height:100vh;
+    }
+    
+    nav.globalMenuSp ul {
+        background: #00dbdb;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    
+    nav.globalMenuSp ul li {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        //border-bottom: 1px solid #fff;
+    }
+    nav.globalMenuSp ul li:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    nav.globalMenuSp ul li:hover{
+        background :#ddd;
+    }
+    
+    nav.globalMenuSp ul li a {
+        display: block;
+        //color: white;
+        //padding: 1em 0;
+        text-decoration :none;
+        font-weight:900;
+        font-size:20px;
+    }
+    
+      /* このクラスを、jQueryで付与・削除する */
+    nav.globalMenuSp.active {
+        transform: translateY(0%);
+    }
+
+
+    .li-logo {
+        margin:20px 0 50px;
+    }
+
+    .online-online {
+    border-radius: 40px;
+    width: 70%;
+    margin:50px auto;
+    box-shadow: none;
+    background-color:white;
+    color:#00dbdb;
+    padding:15px 0;
+    }
+
+    .online-online .fa-shopping-cart {
+        margin-right:10px;
+    }
+
+    .point-check {
+        color:white;
+        padding:15px 0;
     }
 
 }
