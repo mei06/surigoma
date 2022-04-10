@@ -224,6 +224,66 @@
     </div>
 
     <div id="check"></div>
+    <div class="check-wrapper2">
+    <div class="check-wrapper">
+      <div class="container">
+        <div class="point-heading2">
+          <h2>おすすめレシピ</h2>
+          <img class="under-point" src=" <%= "/top_images/h2_ttl02.png" %>">
+        </div>
+        <div class="main check-main">
+          <div class="check2">
+            <ul class="check-list2">
+              <li class="check-buttom check-hou check-one check-las js-dropdown" id="recipe_buttom_1">
+                <p class="check-p check-ren">ほうれん草の和えもの</p>
+                <span class="fa fa-chevron-down check-fa"></span>
+              </li>
+              <div class="panel js-dropdown-menu">
+              <li class="check-buttom check-one check-las" id="recipe_buttom_2">
+                <p class="check-ptwe">レンコンとベーコンの<br>洋風きんぴら</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+              <li class="check-buttom check-one check-las" id="recipe_buttom_3">
+                <p class="check-ptwe">鶏肉のクラッシュアーモンド<br>すりごま焼き</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+              <li class="check-buttom check-one check-las" id="recipe_buttom_4">
+                <p class="check-ptwe">スモークサーモンの<br>ポテトサラダ</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+              <li class="check-buttom check-one check-las" id="recipe_buttom_5">
+                <p class="check-ptwe">まぐろとアボカドの<br>ポキプレート</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+              <li class="check-buttom check-twe check-hou check-lis" id="recipe_buttom_6">
+                <p class="check-p check-nis">ニース風サラダ</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+              <li class="check-buttom check-twe check-lis" id="recipe_buttom_7">
+                <p class="check-p check-nis">はちみつバタートースト</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+              <li class="check-buttom check-twe check-lis" id="recipe_buttom_8">
+                <p class="check-p check-nis">りんごのパウンドケーキ</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+              <li class="check-buttom check-twe check-lis" id="recipe_buttom_9">
+                <p class="check-p check-nis">いちごのヨーグルト</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+              <li class="check-buttom check-twe check-lis" id="recipe_buttom_0">
+                <p class="check-p check-nis">3種類のディアマンクッキー</p>
+                <span class="fa fa-chevron-down check-fa2"></span>
+              </li>
+            </ul>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+        </div>
+
+    <div id="check"></div>
     <div class="check-wrapper">
       <div class="container">
         <div class="point-heading">
@@ -232,8 +292,6 @@
         </div>
         <div class="main check-main">
           <div class="check">
-          <a class="js-dropdown">menu1</a>
-          <div class="panel js-dropdown-menu">
             <ul class="check-list">
               <li class="check-buttom check-hou check-one check-las" id="recipe_buttom_1">
                 <p class="check-p check-ren">ほうれん草の和えもの</p>
@@ -277,7 +335,6 @@
               </li>
             </ul>
             </div>
-          </div>
         </div>
         <div class="recipe-wrapper">
             <div class="recipe" id="recipe_1">
@@ -900,6 +957,13 @@
         $(this).css('color','white');
     })
 
+    $('.check-buttom').click(function() {
+        $('.check-list2 li').css('background-color','white');
+        $('.check-list2 li').css('color','rgb(36, 214, 214)');
+        $(this).css('background-color','rgb(36, 214, 214)');
+        $(this).css('color','white');
+    })
+
       $(".page-top").click(function(){
         $('html, body').animate({
       'scrollTop': 0
@@ -908,7 +972,7 @@
 
     $(function(){
   var $dropdown = $('.js-dropdown');
-  var DURATION = 200; //アニメーションの速さ
+  var DURATION = 500; //アニメーションの速さ
 
   function fadeOutMenu(){
     $dropdown.removeClass('is-active')
@@ -930,7 +994,7 @@
   }
 
   $dropdown.on('click', toggleMenu);
- 
+
 //別の場所をクリックすると閉じる処理
   $(document).on('click touchend', function(event) {
   if (!$(event.target).closest('body').length) {

@@ -208,6 +208,10 @@ ul {
     padding-right:5px;
 }
 
+.globalMenuSp {
+    display:none;
+}
+
 
 
 //thirteen-wrapper
@@ -768,6 +772,9 @@ h4 {
     vertical-align:middle;
 }
 
+.check-wrapper2 {
+    display:none;
+}
 
 
 // introduction-wrapper
@@ -1348,6 +1355,22 @@ footer {
         display:none;
     }
 
+    .globalMenuSp {
+        display:block !important;
+    }
+
+    .check {
+        display:none;
+    }
+
+    .point-heading {
+        display:none;
+    }
+
+    .check-wrapper2 {
+        display:block !important;
+    }
+
 }
 
 
@@ -1678,13 +1701,36 @@ footer {
 
     //check-wrapper
 
-    .check-list li {
+    .check-main {
+        height:65px;
+    }
+
+    .point-heading2 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .check-list2 li {
         width:100%;
+        background-color:white;
         border-right: 1px solid #24d6d6;
         border-left: 1px solid #24d6d6;
+        margin-top:-1px;
+        position:relative;
+        color:#24d6d6;
+    }
+
+    .js-dropdown-menu {
+        max-height: 200px;
+        overflow-y:scroll;
+    }
+
+    .js-dropdown {
+        margin-bottom:10px;
     }
     
-    .check-list p {
+    .check-list2 p {
         display:inline-block;
         text-align:left;
         float:left;
@@ -1718,10 +1764,6 @@ footer {
 
     .check-ptwe {
         padding-top:0;
-    }
-
-    .check-list li:hover {
-        //pointer-events: none;
     }
 
     .recipe {
@@ -1892,43 +1934,48 @@ footer {
     .hamburger {
         display : block;
         position: fixed;
-        z-index : 3;
-        right : 13px;
+        z-index : 12;
+        right : 11px;
         top   : 12px;
-        width : 42px;
-        height: 42px;
+        width : 55px;
+        height: 55px;
         cursor: pointer;
         text-align: center;
+        border:1px solid white;
+        border-radius:50%;
+        background-color:white;
+        box-shadow: 0 0px 2px 0 rgb(83, 83, 83);
     }
 
     .hamburger span {
         display : block;
         position: absolute;
-        width   : 30px;
-        height  : 2px ;
-        left    : 6px;
-        background : #555;
-        -webkit-transition: 0.3s ease-in-out;
-        -moz-transition   : 0.3s ease-in-out;
-        transition        : 0.3s ease-in-out;
+        width   : 20px;
+        height  : 3px ;
+        left    : 17px;
+        background : #252015;
+        //-webkit-transition: 0.3s ease-in-out;
+        //-moz-transition   : 0.3s ease-in-out;
+        //transition        : 0.3s ease-in-out;
     }
 
     .hamburger span:nth-child(1) {
-        top: 10px;
+        top: 18px;
     }
 
     .hamburger span:nth-child(2) {
-        top: 20px;
+        top: 25px;
     }
 
     .hamburger span:nth-child(3) {
-        top: 30px;
+        top: 32px;
     }
     
       /* ナビ開いてる時のボタン */
     .hamburger.active span:nth-child(1) {
-        top : 16px;
-        left: 6px;
+        top : 25px;
+        left: 17px;
+        background : #00dbdb;
         -webkit-transform: rotate(-45deg);
         -moz-transform   : rotate(-45deg);
         transform        : rotate(-45deg);
@@ -1936,7 +1983,8 @@ footer {
     
     .hamburger.active span:nth-child(2),
     .hamburger.active span:nth-child(3) {
-        top: 16px;
+        top: 25px;
+        background : #00dbdb;
         -webkit-transform: rotate(45deg);
         -moz-transform   : rotate(45deg);
         transform        : rotate(45deg);
@@ -1944,7 +1992,7 @@ footer {
     
     nav.globalMenuSp {
         position: fixed;
-        z-index : 2;
+        z-index : 11;
         top  : 0;
         left : 0;
         color: #000;
@@ -1983,7 +2031,7 @@ footer {
         //padding: 1em 0;
         text-decoration :none;
         font-weight:900;
-        font-size:20px;
+        //font-size:20px;
     }
     
       /* このクラスを、jQueryで付与・削除する */
@@ -1993,17 +2041,22 @@ footer {
 
 
     .li-logo {
-        margin:20px 0 50px;
+        margin:30px 0 80px;
+    }
+
+    .center-head {
+        font-size:20px;
     }
 
     .online-online {
     border-radius: 40px;
     width: 70%;
-    margin:50px auto;
+    margin:80px auto;
     box-shadow: none;
     background-color:white;
     color:#00dbdb;
-    padding:15px 0;
+    padding:17px 0;
+    font-size:18px;
     }
 
     .online-online .fa-shopping-cart {
