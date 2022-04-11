@@ -234,11 +234,15 @@
         <div class="main check-main">
           <div class="check2">
             <ul class="check-list2">
-              <li class="check-buttom check-hou check-one check-las js-dropdown" id="recipe_buttom_1">
+              <li class="check-hou check-one check-las js-dropdown">
+                <p class="check-p check-ren" id="check-text">ほうれん草の和えもの</p>
+                <span class="fa fa-chevron-down check-fa"></span>
+              </li>
+              <div class="panel js-dropdown-menu"  style="display:none;">
+              <li class="check-buttom check-hou check-one check-las" id="recipe_buttom_1">
                 <p class="check-p check-ren">ほうれん草の和えもの</p>
                 <span class="fa fa-chevron-down check-fa"></span>
               </li>
-              <div class="panel js-dropdown-menu">
               <li class="check-buttom check-one check-las" id="recipe_buttom_2">
                 <p class="check-ptwe">レンコンとベーコンの<br>洋風きんぴら</p>
                 <span class="fa fa-chevron-down check-fa2"></span>
@@ -897,7 +901,7 @@
     <div id="introduction"></div>
     <div class="introduction-wrapper">
       <div class="container introduction-container">
-        <div class="point-heading">
+        <div class="introduction-heading">
           <h2>商品のご紹介</h2>
           <img class="under-point" src=" <%= "/top_images/h2_ttl03.png" %>">
         </div>
@@ -950,6 +954,8 @@
         $("#recipe_" + $(this).attr("id").slice(-1)).show();
     })
 
+
+//クリック時色変えと別の場所クリックした時クリック解除
       $('.check-buttom').click(function() {
         $('.check-list li').css('background-color','white');
         $('.check-list li').css('color','rgb(36, 214, 214)');
@@ -964,15 +970,17 @@
         $(this).css('color','white');
     })
 
-      $(".page-top").click(function(){
-        $('html, body').animate({
+
+//ドロップタウンメニュー？
+    $(".page-top").click(function(){
+      $('html, body').animate({
       'scrollTop': 0
       }, 500);
     })
 
     $(function(){
   var $dropdown = $('.js-dropdown');
-  var DURATION = 500; //アニメーションの速さ
+  var DURATION = 500;
 
   function fadeOutMenu(){
     $dropdown.removeClass('is-active')
@@ -982,12 +990,11 @@
   }
 
   function toggleMenu(){
-    var $self = $(this); //thisにはクリックした時の要素が入る
-    //要素が.is-activeを持っていない場合
+    var $self = $(this);
     if(!$self.hasClass('is-active')){
       fadeOutMenu();
     }
-    //クリックした要素を表示させる
+
     $self.toggleClass('is-active')
       .next('.js-dropdown-menu')
       .stop().slideToggle(DURATION);
@@ -995,15 +1002,15 @@
 
   $dropdown.on('click', toggleMenu);
 
-//別の場所をクリックすると閉じる処理
-  $(document).on('click touchend', function(event) {
-  if (!$(event.target).closest('body').length) {
-    // ここに処理;
-    fadeOutMenu();//関数呼びだし
+  $(document).on('touchend', function(event) {
+  if (!$(event.target).closest('.check_buttom').length) {
+    fadeOutMenu();
   }
 });
   });
 
+
+//hover無効(cssでクリックイベント無効でhover解除するとクリックした時の動きも消えてしまったため)
   var touch = 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 
   if(touch) {
@@ -1023,16 +1030,25 @@
     } catch (ex) {}
   }
 
+
+//ハンバーガーメニュー
   $(function() {
     $('.hamburger').click(function() {
         $(this).toggleClass('active');
- 
+
         if ($(this).hasClass('active')) {
             $('.globalMenuSp').addClass('active');
         } else {
             $('.globalMenuSp').removeClass('active');
         }
     });
+});
+
+
+$(function () {
+  $(".check-buttom").click( function() {
+    $("#check-text").text("#recipe_buttom_" + $(this).attr("id").slice(-1));
+  });
 });
 
     </script>

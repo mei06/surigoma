@@ -790,6 +790,12 @@ h4 {
     padding:150px 0;
 }
 
+.introduction-heading {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 .introduction-main {
     margin-top:50px;
 }
@@ -1702,7 +1708,11 @@ footer {
     //check-wrapper
 
     .check-main {
-        height:65px;
+        height:58px;
+    }
+
+    .check-wrapper {
+        padding:0 20px;
     }
 
     .point-heading2 {
@@ -1713,6 +1723,7 @@ footer {
 
     .check-list2 li {
         width:100%;
+        height:70px;
         background-color:white;
         border-right: 1px solid #24d6d6;
         border-left: 1px solid #24d6d6;
@@ -1739,7 +1750,7 @@ footer {
 
     .check-fa {
         float:right;
-        padding-top:0;
+        padding-top:3px;
     }
 
     .check-fa2 {
@@ -1767,11 +1778,15 @@ footer {
     }
 
     .recipe {
-        padding:20px 30px;
+        padding:20px;
     }
 
     .recipe-head {
         display:block;
+    }
+
+    .recipe-wrapper {
+        margin-bottom:100px;
     }
 
     .cutlery {
@@ -1805,6 +1820,12 @@ footer {
 
     .recipe-right {
         font-size:12px;
+    }
+
+    .recipe-mark {
+        font-size:17px;
+        padding-right:10px;
+        font-weight:normal;
     }
 
 
@@ -1854,6 +1875,7 @@ footer {
         width:100%;
         padding:15px 0;
         font-size:16px;
+        margin-top:30px;
     }
 
     .thirteen-link .fa-shopping-cart {
