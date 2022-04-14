@@ -221,7 +221,8 @@ ul {
 }
 
 .heading-logo1 {
-    width:1200px;
+    max-width:1200px;
+    width:100%;
     padding:90px 0 120px 0;
     display:block;
     margin:0 auto;
@@ -784,6 +785,7 @@ h4 {
     background-image:url("/top_images/product_bg.jpg");
     background-size:cover;
     height:980px;
+    background-position:center;
 }
 
 .introduction-container {
@@ -1279,14 +1281,6 @@ footer {
         padding-bottom:20px;
     }
 
-    .area-left {
-        //margin:0 3vw 0 3vw;
-    }
-
-    .area-right {
-        //margin:100px 3vw 50px 3vw;
-    }
-
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -1310,12 +1304,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 1260px) {
-    .recipe-content {
-        //width:37vw;
-    }
-}
-
 @media screen and (max-width: 1120px) {
     .introduction-package {
         width:27vw;
@@ -1333,7 +1321,6 @@ footer {
 @media screen and (max-width: 840px) {
     .p-contents-twe {
         max-width:85%;
-        //margin-right:5%;
     }
 
 }
@@ -1350,6 +1337,7 @@ footer {
     body {
         background-image:url("/top_images/sp_visual_bg.jpg");
         background-size:cover;
+        //background-position:center;
         background-attachment:fixed;
     }
 
@@ -1369,10 +1357,6 @@ footer {
         display:none;
     }
 
-    .point-heading {
-        display:none;
-    }
-
     .check-wrapper2 {
         display:block !important;
     }
@@ -1380,7 +1364,7 @@ footer {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
     // top-wrapper 
 
     .top-wrapper {
@@ -1389,9 +1373,9 @@ footer {
     }
 
     .logo {
-        width:30%;
+        width:100px;
         position:absolute;
-        top:4%;
+        top:6%;
         right:0;
         left:0;
         margin:auto;
@@ -1399,11 +1383,11 @@ footer {
     }
     
     .img01 {
-        width:75%;
+        width:250px;
         position:absolute;
-        top:9%;
-        right:0;
+        top:10%;
         left:0;
+        right:0;
         margin:auto;
         z-index:10;
     }
@@ -1425,10 +1409,10 @@ footer {
     }
 
     .sp02 {
-        width:40%;
+        width:36%;
         position:absolute;
         top:0px;
-        right:0px;
+        right:0;
         display:block !important;
         overflow: hidden;
     }
@@ -1440,7 +1424,7 @@ footer {
     .sp03 {
         width:30%;
         position:absolute;
-        bottom:200px;
+        bottom:270px;
         display:block !important;
     }
 
@@ -1448,8 +1432,7 @@ footer {
     // thirteen-wrapper
 
     .thirteen-wrapper {
-        height:850px;
-        margin-bottom:0;
+        height:auto;
     }
 
     .heading-logo1 {
@@ -1457,7 +1440,8 @@ footer {
     }
 
     .heading-logo2 {
-        width:90%;
+        max-width:90%;
+        width:100%;
         padding:0;
         display:block !important;
         margin:0 auto;
@@ -1475,7 +1459,7 @@ footer {
     }
 
     .thirteen-contents {
-        width:80%;
+        width:90%;
         margin:0 auto;
     }
 
@@ -1486,6 +1470,15 @@ footer {
     .thirteen-p {
         font-size:13.5px;
         padding:10px 0 40px;
+    }
+
+    .thirteen-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        margin-right:0;
     }
 
     .component {
@@ -1503,7 +1496,8 @@ footer {
         width:88%;
         font-size:14px;
         text-align:left;
-        margin:20px 0 50px;
+        margin-top:20px;
+        margin-bottom:50px;
     }
     
     .graph {
@@ -1534,8 +1528,9 @@ footer {
     }
 
     .sweet-content {
-        height:261px;
+        //height:261px;
         margin-top:70px;
+        height:auto;
     }
 
     .noone-sweet1 {
@@ -1544,7 +1539,7 @@ footer {
     
     .noone-sweet2 {
         width:80%;
-        bottom:0;
+        bottom:-2.5%;
         left:0;
         //bottom:100px;
         display:block !important;
@@ -1556,10 +1551,13 @@ footer {
     
     .noone-sweets2 {
         width:75%;
-        right:0;
+        //right:0;
         //bottom:0;
         //padding-top:150px;
         display:block !important;
+        position:initial;
+        margin-right: 0;
+        margin-left: auto;
     }
 
 
@@ -1568,6 +1566,11 @@ footer {
     h2 {
         font-size:28px;
         text-align:center;
+    }
+
+    .point-main {
+        margin-top:10px;
+        margin-bottom:40px;
     }
 
     .point-img {
@@ -1585,7 +1588,7 @@ footer {
     .number-img {
         align-items:center;
         margin:0 39% 20px;
-        width:18%;
+        width:65px;
     }
 
     .point-contents {
@@ -1595,8 +1598,8 @@ footer {
     }
 
     .point-w {
-        width:85%;
-        margin:10px 10%;
+        width:100%;
+        //margin:10px 10%;
     }
 
     p {
@@ -1606,15 +1609,18 @@ footer {
     .point-area {
         display:block;
         height:auto;
+        width:90%;
+        margin-right:0;
+        margin: 0 auto;
     }
 
     .area {
-        width:80%;
-        margin:0 auto;
+        width:100%;
+        //margin:0 auto;
     }
 
     .area-left {
-        margin-bottom:50px;
+        margin:0 0 50px 0;
     }
 
     .area img {
@@ -1631,7 +1637,7 @@ footer {
     }
 
     .area-right {
-        margin-bottom:60px;
+        margin:0 0 60px 0;
     }
 
     .point-main-twe {
@@ -1641,7 +1647,7 @@ footer {
     .number-img-twe {
         align-items:center;
         margin:0 39% 20px;
-        width:25%;
+        width:65px;
     }
 
     .p-contents-twe {
@@ -1908,7 +1914,7 @@ footer {
         height:55px;
         font-size:10px;
         bottom:55px;
-        right:10px;
+        right:12%;
     }
 
     .fa-chevron-up {
@@ -1918,6 +1924,7 @@ footer {
     .buy-bottom {
         height:80px;
         width:100%;
+        padding:20px 10px 10px;
         background-color:white;
         position:fixed;
         bottom:0;
@@ -1926,11 +1933,14 @@ footer {
     .buy {
         position:initial;
         border-radius:40px;
-        width:70%;
+        width:260px;
         height:40px;
         line-height:40px;
-        margin:5% auto;
+        margin:0 auto;
         box-shadow:none;
+        display: flex;
+align-items: center;
+justify-content: center;
     }
 
     .buy span {
@@ -1957,7 +1967,7 @@ footer {
         display : block;
         position: fixed;
         z-index : 12;
-        right : 11px;
+        right : 12%;
         top   : 12px;
         width : 55px;
         height: 55px;
@@ -2054,9 +2064,11 @@ footer {
         text-decoration :none;
         font-weight:900;
         //font-size:20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
-      /* このクラスを、jQueryで付与・削除する */
     nav.globalMenuSp.active {
         transform: translateY(0%);
     }
