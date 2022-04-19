@@ -202,6 +202,10 @@ ul {
     vertical-align: middle;
 }
 
+.li-logo-sp {
+    display:none;
+}
+
 .center-online a {
     color:rgb(0, 209, 205);
 }
@@ -216,7 +220,7 @@ ul {
 }
 
 .globalMenuSp {
-    display:none;
+    //display:none;
 }
 
 
@@ -327,7 +331,12 @@ ul {
 
 .noone-attention {
     font-weight:900;
-    background:linear-gradient(transparent 70%, #ffc04c 0%) ;
+    background:linear-gradient(transparent 60%, #ffc60b 0%) ;
+    white-space:nowrap;
+}
+
+.noone-attention:nth-child(2) {
+    margin-right:3px;
 }
 
 .noone-img {
@@ -690,7 +699,7 @@ ul {
 
 .recipe-wrapper {
     max-width:1200px;
-    max-height:1380px;
+    max-height:1780px;
     margin:0 auto;
     margin-bottom:140px;
 }
@@ -922,6 +931,7 @@ footer {
     font-weight:900;
     font-size:18px;
     right:30px;
+    display: none;
 }
 
 .buy:hover {
@@ -945,14 +955,15 @@ footer {
     font-weight:900;
     font-size:18px;
     font-size:15px;
-    color:rgb(255, 175, 25);
+    color:rgb(255, 198, 11);
     line-height:15px;
+    display: none;
 }
 
 .page-top:hover {
-    background-color:rgb(255, 175, 25);
+    background-color:rgb(255, 198, 11);
     color:white;
-    border:1px solid rgb(255, 175, 25);
+    border:1px solid rgb(255, 198, 11);
 }
 
 .fa-chevron-up {
@@ -1366,10 +1377,6 @@ footer {
         background-attachment:fixed;
     }
 
-    .center-wrapper {
-        display:none;
-    }
-
     .thirteen-link {
         display:none;
     }
@@ -1531,6 +1538,10 @@ footer {
         margin-bottom:60px;
     }
 
+    .noone-main {
+        margin:0 20px;
+    }
+
     .noone-half {
         width:88%;
         font-size:14px;
@@ -1572,6 +1583,10 @@ footer {
         height:auto;
     }
 
+    .noone-br {
+        display:none;
+    }
+
     .noone-sweet1 {
         display:none !important;
     }
@@ -1600,11 +1615,11 @@ footer {
     }
 
     .heading-logo2 {
-        max-width:90%;
+        max-width:95%;
         width:100%;
         padding:0;
         display:block !important;
-        margin:0 auto;
+        margin:0 20px;
     }
 
 
@@ -1635,14 +1650,15 @@ footer {
     .number-img {
         align-items:center;
         margin:0 auto 15px;
-        width:65px;
+        width:75px;
         display:block;
     }
 
     .point-contents {
-        max-width:90%;
+        max-width:95%;
         display:block;
         padding-top:0;
+        margin:0 20px;
     }
 
     .point-w {
@@ -1657,9 +1673,9 @@ footer {
     .point-area {
         display:block;
         height:auto;
-        width:83%;
-        margin-right:0;
-        margin: 0 auto;
+        //width:83%;
+        \\margin-right:0;
+        margin:0 40px;
     }
 
     .area {
@@ -1695,14 +1711,15 @@ footer {
     .number-img-twe {
         align-items:center;
         margin:0 39% 20px;
-        width:65px;
+        width:75px;
     }
 
     .p-contents-twe {
-        max-width:90%;
+        width:100%;
+        max-width:95%;
         display:block;
         padding-top:0;
-        margin-bottom:30px;
+        margin:0 20px 30px;
     }
 
     .p-content-twe {
@@ -1728,8 +1745,8 @@ footer {
     }
 
     .areas-right {
-        width:90%;
-        margin:0 0 0 35px;
+        width:auto;
+        margin:3px 5px 0 40px;
     }
 
     .areas {
@@ -1949,6 +1966,12 @@ footer {
         margin:30px auto 0;
     }
 
+    .introduction-wrapper .thirteen-link:hover {
+        background-color:black;
+        border:2px solid black;
+        color:white;
+    }
+
     .thirteen-link .fa-shopping-cart {
         top:34%;
         left:3%;
@@ -1980,6 +2003,13 @@ footer {
         font-size:10px;
         bottom:55px;
         right:2%;
+        cursor:pointer;
+    }
+
+    .page-top:hover {
+        background-color:white;
+        border:1px solid white;
+        color:rgb(255, 198, 11);
     }
 
     .fa-chevron-up {
@@ -2000,18 +2030,19 @@ footer {
         border-radius:40px;
         width:260px;
         height:40px;
-        line-height:40px;
+        line-height:38px;
         margin:0 auto;
         box-shadow:none;
         display: flex;
         align-items: center;
         justify-content: center;
+        display:block !important;
     }
 
     .buy:hover {
         background-color:rgb(0, 209, 205);
         color:white;
-        border:rgb(0, 209, 205);
+        border:1px solid rgb(0, 209, 205);
     }
 
     .buy span {
@@ -2038,7 +2069,7 @@ footer {
         display : block;
         position: fixed;
         z-index : 12;
-        right : 2%;
+        right : 15px;
         top   : 12px;
         width : 55px;
         height: 55px;
@@ -2154,7 +2185,20 @@ footer {
     }
 
 
+    .center {
+        background-color:transparent;
+    }
+
     .li-logo {
+        display:none;
+    }
+
+    .li-logo-sp {
+        display:block !important;
+        width:80px;
+    }
+
+    .center-shinsei {
         margin:30px 0 80px;
     }
 
@@ -2169,7 +2213,7 @@ footer {
     box-shadow: none;
     background-color:white;
     color:rgb(0, 209, 205);
-    padding:17px 35px;
+    padding:0 35px;
     font-size:18px;
     }
 
@@ -2179,7 +2223,7 @@ footer {
 
     .point-check {
         color:white;
-        padding:15px 0;
+        //padding:15px 0;
     }
 
     .center-head a:hover {
